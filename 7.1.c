@@ -9,7 +9,7 @@ int main() {
         sleep(1);
         execl("/bin/sh", "/bin/sh", "-c", "ps >> processes.txt", NULL);
     } else {
-        perror("Fork error ");
+        perror("Fork error");
         return -1;
     }
     return 0;
